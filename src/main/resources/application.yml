@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/webchat
+    username: postgres
+    password: Qwert123!!
+  flyway:
+    url: jdbc:postgresql://localhost:5432/webchat
+    user: postgres
+    password: Qwert123!!
+    enabled: true
+    locations:
+      - 'classpath:db/migration'
